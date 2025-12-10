@@ -1,0 +1,31 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "Group chat application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev" : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princeoo635/webSocket.git"
+  },
+  "keywords": [
+    "websocket",
+    "express"
+  ],
+  "author": "Prince Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princeoo635/webSocket/issues"
+  },
+  "homepage": "https://github.com/princeoo635/webSocket#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
