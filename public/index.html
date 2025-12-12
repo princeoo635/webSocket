@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <h1 class="title">Chat App</h1>
+    <div class="main">
+        <div class="name">
+            <span><i class="far fa-user"></i></span>
+            <input type="text" class="name-input" id="name-input" value="anonymous" maxlength="15">
+        </div>
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+                <p class="message">Lorem, ipsum dolor.
+                    <span>name.11 december</span>
+                </p>
+            </li>
+            <li class="message-right">
+                <p class="message">Lorem, ipsum dolor.
+                    <span>name.11 dece mber</span>
+                </p>
+            </li>
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                    someone is typping message
+                </p>
+            </li>
+        </ul>
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+            <div class="divider"></div>
+            <button type="submit" class="send-button" id="send-button">send <span><i class="fa-solid fa-paper-plane"></i></span></button>
+        </form>
+    </div>
+    <h3 class="clients-total">Total clients : 3</h3>
+</body>
+</html>
