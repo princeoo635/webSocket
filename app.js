@@ -6,4 +6,18 @@ const Port = process.env.Port || 8000;
 const server =app.listen(Port,()=>
 console.log(`server is running at Port : ${Port}`))
 
+const io=require('socket.io')(server)
 app.use(express.static(path.join(__dirname,'public')));
+
+let socketConnected = new Set()
+io.on('connection',onConnection)
+
+function onConnection(socket) {
+    console.log(socket.id); 
+    socketConnected.add(socket.id) 
+    io.emit('clients-total',socketConnected.size)
+    socket.on('disconnect',()=>{
+        socketConnected.delete(socket.id)
+        io.emit('clients-total',socketConnected.size)
+    })
+}
